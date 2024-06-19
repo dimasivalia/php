@@ -1,0 +1,64 @@
+body > *{
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+}
+
+form[name='todo_from']{
+    margin:0 auto;
+    display:flex;
+    flex-flow: column wrap;
+    width:min-content;
+}
+
+ul{
+    list-style-type: none;
+    list-style-position: inside;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width:fit-content;
+    padding:10px;
+    background-color: rgb(36,76,67);
+    border:10px solid rgb(198,152,116);
+}
+
+li{
+    flex:0 1 160px;
+    border: 2px solid black;
+    padding:2px;
+    margin:4px 2px;
+}
+
+li div{
+    margin:2px 0;
+}
+
+li div span{
+    text-decoration:underline;
+}
+
+li div:nth-child(3) span{
+    text-decoration:none;
+}
+
+form[name='del_form']{
+    display:inline-block;
+    margin:0;
+}
+
+form[name='del_form'] button{
+    background-color: rgb(255,0,0);
+    color: rgb(255,255,255);
+    border-radius:7%;
+    border-style: none;
+    transition: background-color 0.25s;
+}
+
+form[name='del_form'] input:active{
+    background-color: rgb(120,0,0);
+}
